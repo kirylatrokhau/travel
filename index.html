@@ -351,14 +351,18 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-</script>
-<script>
-const myButton = document.getElementById('search');
-myButton.addEventListener('click', () => {
-  logEvent(analytics, 'button_click', {
-    button_name: 'search_button',
-    page_location: window.location.href
+
+document.addEventListener('DOMContentLoaded', () => {
+    const myButton = document.getElementById('search');
+
+    if (myButton) {
+      myButton.addEventListener('click', () => {
+        logEvent(analytics, 'button_click', {
+          button_name: 'search_button',
+          page_location: window.location.href
+        });
+      });
+    }
   });
-});
 </script>
 </body></html>
