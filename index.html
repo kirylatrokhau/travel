@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#006e2c",
+                        "outline-variant": "#c1c6d6",
+                        "secondary-fixed-dim": "#6ddd81",
+                        "tertiary-container": "#987000",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#eff0fa",
+                        "primary-fixed": "#d8e2ff",
+                        "primary": "#005bbf",
+                        "secondary-fixed": "#89fa9b",
+                        "background": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005320",
+                        "on-primary-fixed": "#001a41",
+                        "surface-container-high": "#e6e8f2",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9ff",
+                        "inverse-surface": "#2d3038",
+                        "tertiary-fixed": "#ffdea0",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#002108",
+                        "inverse-primary": "#adc7ff",
+                        "surface-variant": "#e0e2ec",
+                        "surface-container": "#ecedf7",
+                        "surface-bright": "#f9f9ff",
+                        "tertiary": "#795900",
+                        "on-tertiary-container": "#ffffff",
+                        "surface-dim": "#d8d9e3",
+                        "on-background": "#191c23",
+                        "surface-tint": "#005bc0",
+                        "primary-fixed-dim": "#adc7ff",
+                        "on-primary-fixed-variant": "#004493",
+                        "outline": "#727785",
+                        "on-secondary-container": "#00722f",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#86f898",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414754",
+                        "surface-container-highest": "#e0e2ec",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-container-low": "#f2f3fd",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#ffffff",
+                        "primary-container": "#1a73e8",
+                        "on-surface": "#191c23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        .no-line { border: none !important; }
+        .tonal-transition { transition: background-color 0.3s ease; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm flex justify-between items-center px-6 py-4 w-full no-line tonal-transition">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-700" data-icon="explore">explore</span>
+<span class="text-xl font-bold tracking-tighter text-blue-700 font-headline">The Voyager</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 font-semibold font-headline hover:opacity-80 transition-opacity" href="#">Explore</a>
+<a class="text-slate-600 font-headline hover:opacity-80 transition-opacity" href="#">Bookings</a>
+<a class="text-slate-600 font-headline hover:opacity-80 transition-opacity" href="#">Merchants</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-600 scale-95 active:scale-90 transition-transform cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center justify-center overflow-hidden px-6 py-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-75" data-alt="cinematic wide shot of misty mountains at sunrise with turquoise lake in the foreground and golden light hitting the peaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsWG9pAjNHxdIn8oYxU7OMuDh051AryKq2Nf2Tpae1odT2rG8ye-RP-6vqxjy8Oixf8y5exjAp-3lhSUXDPCFNs7rSYVCGci-oDkGgjv8IFogpqafFqWJyaMZRYJB24GY7u707DeeGCGqN75NZtjjf6YW2v6dQyCk4mLB3jTagIuZVLzPmQJ8WQae_OQ05f9pZWnNyBsX7GFXxCVwBoC8CIl1-BVuSBzGvJfzQaTSDxcaIKOFxFG_yVihJ-f9MG8Y8m6l5TsDABl4"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
+</div>
+<div class="relative z-10 max-w-4xl w-full text-center space-y-8">
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline text-white tracking-tight leading-tight">
+                    Discover Your Next <br/> <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-fixed via-white to-secondary-fixed">Adventure</span>
+</h1>
+<div class="max-w-2xl mx-auto">
+<div class="bg-surface-container-lowest/70 backdrop-blur-xl p-2 rounded-full flex items-center shadow-2xl transition-all focus-within:ring-2 ring-tertiary-fixed-dim">
+<span class="material-symbols-outlined px-4 text-on-surface-variant" data-icon="location_on">location_on</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder:text-on-surface-variant/60 font-medium" placeholder="Where do you want to go?" type="text"/>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-primary/30 transition-all active:scale-95">
+                            Search
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Proposition: Tourists -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group p-8 rounded-xl bg-surface-container-low transition-all hover:bg-surface-bright hover:shadow-sm">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3">Reliable Reviews</h3>
+<p class="text-on-surface-variant leading-relaxed">Verified feedback from our community of global travelers ensures you make the best choice every time.</p>
+</div>
+<div class="group p-8 rounded-xl bg-surface-container-low transition-all hover:bg-surface-bright hover:shadow-sm">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="online_prediction">online_prediction</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3">Online Booking</h3>
+<p class="text-on-surface-variant leading-relaxed">Instant confirmation and secure payments for thousands of destinations worldwide at your fingertips.</p>
+</div>
+<div class="group p-8 rounded-xl bg-surface-container-low transition-all hover:bg-surface-bright hover:shadow-sm">
+<div class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6 text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="bolt">bolt</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-3">Skip the Line</h3>
+<p class="text-on-surface-variant leading-relaxed">Exclusive priority access to the most popular landmarks and hidden gems without the wait.</p>
+</div>
+</div>
+</section>
+<!-- Featured Destinations -->
+<section class="py-24 bg-surface-container-low/50 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-extrabold font-headline text-on-surface mb-2">Featured Destinations</h2>
+<p class="text-on-surface-variant">Handpicked journeys for the curious soul</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-outline hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-outline hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-6 px-6 max-w-7xl mx-auto overflow-x-auto no-scrollbar pb-8">
+<!-- Destination Card 1 -->
+<div class="min-w-[320px] bg-surface-container-lowest rounded-xl p-4 transition-all hover:scale-[1.02]">
+<div class="relative h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" data-alt="scenic aerial view of Bali lush rice terraces and palm trees in soft tropical morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHvvMh8NlaKL8PRl4sn0UCKY96YU9rzKgRV81Ghfe4iipISyE8srItASJySns_2qMqB9U3KznHv5qDESsrJ8ShI9Ge_BPoG63FYIS01GnEKnW9nW0Ayq4aVoaOgjEdRMojqf2hcIJ7PBOP5yRQPsRL7yDKaJdliAb1xKwFM4621K93LUEIo_2mp9s0TF1A8psNyyY0rKf_u2olIslWYltZksWwq2gIEgL8dS3NsGzWWYetojNG9YtHyijVdhCXeHrKCOZf_GdH3ds"/>
+<div class="absolute top-4 right-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary">Luxury</div>
+</div>
+<h4 class="text-xl font-bold font-headline mb-1">Bali Retreat</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 7 Days • All-Inclusive
+                    </p>
+<button class="w-full py-3 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all">Book Now</button>
+</div>
+<!-- Destination Card 2 -->
+<div class="min-w-[320px] bg-surface-container-lowest rounded-xl p-4 transition-all hover:scale-[1.02]">
+<div class="relative h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" data-alt="vibrant neon lights of Shinjuku Tokyo at night with busy street and urban atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoT44NmC6cu1sbrRKkc5PSIMVmeei4ZZUHkXNnZ7bIQn1BrKdu-jSPKLRwoaKgPEX7nk1DMBnb2592vfi8JZXaT5N6xmOrhS3NOMiRBqNyuom5mMepSo2UnwMZq90ImmDD4oqQyF1thXe_35X20swtsBYu8dSTMeIXOju_8osqW86ky2ndZDAaWPlWcK8ZxnOvZl1Rxt8elUMJ9lA7p_5F4SyLKeX1NTJ4mFBX0_sinXJm9N7AuyVeagn0iabxAyOKIbq0trYoMYU"/>
+<div class="absolute top-4 right-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary">Culture</div>
+</div>
+<h4 class="text-xl font-bold font-headline mb-1">Tokyo Nights</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 5 Days • Urban Tour
+                    </p>
+<button class="w-full py-3 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all">Book Now</button>
+</div>
+<!-- Destination Card 3 -->
+<div class="min-w-[320px] bg-surface-container-lowest rounded-xl p-4 transition-all hover:scale-[1.02]">
+<div class="relative h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" data-alt="colorful houses lining the canals of Venice Italy at sunset with water reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbx4WkkrkYAfg8y3ycDFMzxNHFGIPF8lXzbk61xr-y_Sz5-YyxKkBHPFVjN63omg1lTtlcZxosJaGrb4BnOvl33VaRT7oKChjRyVaBwOrjWm-_UcMh5erdyTlmnwehhj9fe-WzHgd_Y2PEghW2td4ujNxy7ttWkIYoi8F7SlsPYgldLdsi6U4GY3OKHPwDDZ1_da9eoPUoSs3Io31zXBpHvWBK2EtOV46lJSprNkN1T2YZb9tgJEkJxqIoPLs5up_VwNDgbCK7A6M"/>
+<div class="absolute top-4 right-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-tertiary">History</div>
+</div>
+<h4 class="text-xl font-bold font-headline mb-1">Venice Canals</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 4 Days • Private Gondola
+                    </p>
+<button class="w-full py-3 bg-primary/10 text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all">Book Now</button>
+</div>
+</div>
+</section>
+<!-- Merchant Proposition (Bento Style) -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[500px]">
+<div class="md:col-span-8 bg-inverse-surface text-inverse-on-surface rounded-3xl p-12 flex flex-col justify-center relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" data-icon="trending_up">trending_up</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold font-headline mb-6">Grow Your Business</h2>
+<p class="text-lg text-slate-400 max-w-xl mb-10 leading-relaxed">Our platform connects you directly with high-intent travelers. Benefit from low-cost promotion and a suite of powerful tools designed for easy order management.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-primary-container transition-all">Start Selling</button>
+<button class="bg-white/10 text-white px-8 py-3 rounded-full font-bold hover:bg-white/20 transition-all">Merchant Guide</button>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-secondary-container text-on-secondary-container rounded-3xl p-10 flex flex-col justify-end">
+<div class="mb-auto">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="dashboard_customize">dashboard_customize</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-2">Smart Dashboard</h3>
+<p class="text-sm opacity-80">Real-time analytics and customer insights to optimize your offerings daily.</p>
+</div>
+</div>
+</section>
+<!-- Trust Signal / Testimonials -->
+<section class="py-24 bg-surface px-6 overflow-hidden">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-extrabold font-headline mb-4">What travelers are saying</h2>
+<div class="flex justify-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-3xl relative">
+<span class="absolute top-6 right-8 text-6xl text-surface-variant font-serif opacity-40">"</span>
+<p class="text-lg italic text-on-surface leading-relaxed mb-8">"Booking my honeymoon through The Voyager was the best decision. Every detail was curated, and the local merchants were so welcoming!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a smiling young woman with curly hair against a soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf93L0wnEVuPA_wmWP5pwGiYRPOQRXuxnrC6iW7jvfmDnfs7g9jCeXL6Tz_nI-r4XZZH9M_dL3n83j2GquMZWD2CcEDrDSo2XjuY9Zehyj3GuTU0gTuy-dexnvhLcUHo2RUKpXrNRRK3_2KVfYdg1R5BCLkuhmz2p5bUVLAQ1etJjlhICGr1eOqED80tS01fHQFzF2AfvycCox3UaFrJT30p_dbFa80EeDtt9is7_reAuHgBXMJixouN_IiNlCGP4IcNw8PfNNDMA"/>
+</div>
+<div>
+<h5 class="font-bold">Sarah Jenkins</h5>
+<p class="text-xs text-on-surface-variant">Adventurer • London, UK</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-3xl relative">
+<span class="absolute top-6 right-8 text-6xl text-surface-variant font-serif opacity-40">"</span>
+<p class="text-lg italic text-on-surface leading-relaxed mb-8">"The 'Skip the Line' feature saved us hours in Florence. I love the clean interface and how reliable the reviews actually are."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a man with a beard and glasses smiling in an outdoor settings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARfdT5dSTeoILhmrhqaWYKZ5Te4YpgyDq5ZR57q7_qqcUpg6-hss5ZkVZJ6xiVo1PBaFgrRbXuxSkTBdHFaetFi9Q0sz_41IBUsHhoyuTEqslwN_nkjfrNL2yRrY0MTm19SaoG4YqcmuvG7QiRKoExdEK3UVBk37KdezePYSTEpv3xD4qLL41VRoak2CJuhbfCcqYjo7f1OsCqlWIwDmIvT24wldhQvFNmUPLCU_0PN6mPfplWmSNv69MK-tq3dPUKRl329vcL6v8"/>
+</div>
+<div>
+<h5 class="font-bold">Markus Weber</h5>
+<p class="text-xs text-on-surface-variant">Cultural Explorer • Berlin, DE</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-6">
+<div class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-primary-container rounded-[2.5rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px] absolute -bottom-20 -left-20" data-icon="map">map</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-extrabold font-headline mb-8 tracking-tight">Ready to begin your journey?</h2>
+<div class="flex flex-col items-center gap-8">
+<button class="bg-white text-primary text-xl px-12 py-5 rounded-full font-extrabold shadow-2xl hover:scale-105 active:scale-95 transition-all">
+                            Sign Up to Explore
+                        </button>
+<a class="text-white/80 hover:text-white font-medium flex items-center gap-2 border-b border-white/20 pb-1" href="#">
+                            Partner with Us <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-slate-100 py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 no-line tonal-transition">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<span class="font-plus-jakarta-sans font-extrabold text-slate-900 text-xl">The Voyager</span>
+<p class="font-manrope text-sm text-slate-500">© 2024 The Elevated Voyager. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-manrope text-sm text-slate-500 hover:text-blue-600 transition-all" href="#">Terms</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-blue-600 transition-all" href="#">Privacy</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-blue-600 transition-all" href="#">Merchant Portal</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-blue-600 transition-all" href="#">Support</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 backdrop-blur-xl rounded-t-3xl z-50 shadow-[0_-10px_40px_rgba(25,28,35,0.06)] tonal-shift">
+<div class="flex flex-col items-center justify-center bg-blue-50 text-blue-700 rounded-2xl px-4 py-1.5 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="travel_explore">travel_explore</span>
+<span class="font-manrope text-[10px] font-medium">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-manrope text-[10px] font-medium">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-manrope text-[10px] font-medium">Merchants</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-manrope text-[10px] font-medium">Profile</span>
+</div>
+</nav>
+</body></html>
