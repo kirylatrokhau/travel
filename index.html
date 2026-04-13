@@ -123,7 +123,7 @@
 <div class="bg-surface-container-lowest/70 backdrop-blur-xl p-2 rounded-full flex items-center shadow-2xl transition-all focus-within:ring-2 ring-tertiary-fixed-dim">
 <span class="material-symbols-outlined px-4 text-on-surface-variant" data-icon="location_on">location_on</span>
 <input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder:text-on-surface-variant/60 font-medium" placeholder="Where do you want to go?" type="text"/>
-<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-primary/30 transition-all active:scale-95">
+<button id="search" class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-primary/30 transition-all active:scale-95">
                             Search
                         </button>
 </div>
@@ -329,4 +329,36 @@
 <span class="font-manrope text-[10px] font-medium">Profile</span>
 </div>
 </nav>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDhG4IaVW7UVs9XpDO6ukfsFru6C91bgtU",
+    authDomain: "travel-bdf47.firebaseapp.com",
+    projectId: "travel-bdf47",
+    storageBucket: "travel-bdf47.firebasestorage.app",
+    messagingSenderId: "123914291989",
+    appId: "1:123914291989:web:536b070c86c1b84955371c",
+    measurementId: "G-WLD84CV3VS"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<script>
+const myButton = document.getElementById('search');
+myButton.addEventListener('click', () => {
+  logEvent(analytics, 'button_click', {
+    button_name: 'search_button',
+    page_location: window.location.href
+  });
+});
+</script>
 </body></html>
